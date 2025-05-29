@@ -4,7 +4,6 @@ FROM python:3.9-slim
 # Define diretório de trabalho
 WORKDIR /app
 
-
 # Atualiza o pip e instala dependências
 COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
