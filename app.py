@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Hello World", layout="centered")
+st.set_page_config(page_title="Hello World")
 
 st.title("👋 Hello, World!")
 st.subheader("Este é meu primeiro app com Streamlit")
