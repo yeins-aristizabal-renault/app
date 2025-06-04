@@ -1,0 +1,11 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/irn-73317-lab-80/renault-app', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/irn-73317-lab-80/renault-app']
+
+images:
+  - 'gcr.io/irn-73317-lab-80/renault-app'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
